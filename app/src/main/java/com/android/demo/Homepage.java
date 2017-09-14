@@ -16,7 +16,7 @@ import android.widget.Button;
 public class Homepage extends AppCompatActivity {
 
     ActionBar ab;
-    Button task1,task2;
+    Button task1,task2,extra_work;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,7 @@ public class Homepage extends AppCompatActivity {
         ab=getSupportActionBar();
         task1= (Button) findViewById(R.id.task1);
         task2= (Button) findViewById(R.id.task2);
+        extra_work= (Button) findViewById(R.id.extratask);
 
         task1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,16 @@ public class Homepage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(Homepage.this,GoogleSignin.class);
                 startActivity(intent);
+            }
+        });
+
+        extra_work.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(Homepage.this,GithubUser.class);
+                startActivity(intent);
+
             }
         });
     }

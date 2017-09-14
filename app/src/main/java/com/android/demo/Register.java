@@ -208,6 +208,13 @@ public class Register extends AppCompatActivity {
         dataObject =new DataObject(e1.getText().toString(), gender, e2.getText().toString(), e3.getText().toString(), e4.getText().toString(), e5.getText().toString());
         db.addDetails(dataObject);
         Toast.makeText(Register.this,"Data Inserted Sucessfully In Database",Toast.LENGTH_SHORT).show();
+        e1.setText("");
+        e2.setText("");
+        e3.setText("");
+        e4.setText("");
+        e5.setText("");
+        male.setChecked(false);
+        female.setChecked(false);
     }
 
     @Override

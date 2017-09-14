@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
 
         android:orientation="vertical">
 
@@ -76,5 +76,41 @@
             android:text="Task 2"/>
 
 
+        <Button
+            android:id="@+id/extratask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:background="#3b73b1"
+            android:paddingBottom="10dp"
+            android:text="Extra Work"/>
+
+
+
+
+
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="- Extra Work Contains The Use of GSON+Volley+Glide+RecycleView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="- Note: Task 3 Contains Recycle View and it will take time to load Images"/>
 </LinearLayout>
